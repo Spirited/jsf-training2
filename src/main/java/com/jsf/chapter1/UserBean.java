@@ -13,9 +13,8 @@ public class UserBean implements Serializable {
 	private String name;
 	private String password;
 	
-	public String getGreeting() {
-		if ( name == null ) return "";
-		if ( name.length() == 0 ) return "";
+	public String getGreeting() {		
+		if ( name == null || name.length() == 0 ) return "";
 		else return "Welcome to JSF + Ajax, " + name + "!";
 	}
 	
