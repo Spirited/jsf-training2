@@ -8,7 +8,7 @@ target/
 RemoteSystemsTempFiles/
 .recommenders/
 .metadata/
-lastway-web-b/
 deployments/
 persistence.xml
-
+.idea/
+*.iml
