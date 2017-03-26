@@ -10,5 +10,9 @@
         <base-name>com.corejsf.chapter2.messages</base-name>
         <var>ch2</var>
     </resource-bundle>
+    <resource-bundle>
+        <base-name>com.corejsf.chapter3.messages</base-name>
+        <var>ch3</var>
+    </resource-bundle>
  </application>
 </faces-config>
