@@ -12,3 +12,5 @@ deployments/
 persistence.xml
 .idea/
 *.iml
+.idea/kotlinc.xml
+.tern-project
