@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
  <application>
     <locale-config>
         <default-locale>en</default-locale>
@@ -10,9 +11,32 @@
         <base-name>com.corejsf.chapter2.messages</base-name>
         <var>ch2</var>
     </resource-bundle>
-    <resource-bundle>
+    <!-- Chapter3 -->
+     <!-- Resource boundle -->
+     <resource-bundle>
         <base-name>com.corejsf.chapter3.messages</base-name>
         <var>ch3</var>
     </resource-bundle>
  </application>
+    <!-- Navivation Rule for Chapter3 -->
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>startOver</from-outcome>
+            <to-view-id>/chapter3/javaquiz/index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/chapter3/javaquiz/again.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>failure</from-outcome>
+            <to-view-id>/chapter3/javaquiz/failure.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>failure</from-outcome>
+            <to-view-id>/chapter3/javaquiz/again.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <!-- End Chapter3 -->
 </faces-config>
