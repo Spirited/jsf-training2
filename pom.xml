@@ -85,7 +85,15 @@
          <artifactId>jsf-api</artifactId>
          <scope>provided</scope>
       </dependency>
-      <!-- JPA -->
+
+       <dependency>
+           <groupId>com.sun.faces</groupId>
+           <artifactId>jsf-impl</artifactId>
+           <version>2.2.14</version>
+           <scope>provided</scope>
+       </dependency>
+
+       <!-- JPA -->
       <dependency>
          <groupId>javax.persistence</groupId>
          <artifactId>persistence-api</artifactId>
