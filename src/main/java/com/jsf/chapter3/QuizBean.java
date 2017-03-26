@@ -55,7 +55,7 @@ public class QuizBean implements Serializable{
             nextProblem();
             if ( currentProblem == problems.size() ) return "done";
             else return "success";
-        } 
+        }
         else if ( tries == 1 ) return "again";
         else {
             nextProblem();
