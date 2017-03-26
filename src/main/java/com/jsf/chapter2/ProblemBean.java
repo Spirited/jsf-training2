@@ -13,6 +13,7 @@ public class ProblemBean implements Serializable {
     public ProblemBean() {}
 
     public ProblemBean(int[] values, int solution) {
+        sequence = new ArrayList<>();
         for ( int i = 0; i < values.length; i++ )
             sequence.add(i);
         this.solution = solution;
