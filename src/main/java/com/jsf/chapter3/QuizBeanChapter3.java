@@ -12,7 +12,7 @@ import java.util.Collections;
  */
 @Named
 @SessionScoped
-public class QuizBean implements Serializable{
+public class QuizBeanChapter3 implements Serializable{
     private int currentProblem;
     private int tries;
     private int score;
