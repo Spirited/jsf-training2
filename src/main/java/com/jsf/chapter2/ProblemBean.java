@@ -22,5 +22,5 @@ public class ProblemBean implements Serializable {
     public void setSequence(ArrayList<Integer> sequence) { this.sequence = sequence; }
 
     public int getSolution() { return solution; }
-    public void setSolution(int solution) { this.solution = solution; }
+    public void setSolution(int solution) { this.solution = solution }
 }
