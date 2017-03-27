@@ -8,12 +8,12 @@
 <head>
     <title>#{ch3.title}</title>
 </head>
-<h:body>
+<body>
     <h:form>
-        <p>#{ch3.Congratulations, that is correct.}</p>
+        <p>#{ch3.correct}</p>
         <p>#{quizBeanChapter3.question}</p>
         <p><h:inputText value="#{quizBeanChapter3.response}"/></p>
         <p><h:commandButton value="#{ch3.checkAnswer}" action="#{quizBeanChapter3.answerAction}"/></p>
     </h:form>
-</h:body>
+</body>
 </html>

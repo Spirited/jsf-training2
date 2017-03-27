@@ -4,7 +4,7 @@
       fixed very soon.
 -->   
 
-      <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://java.sun.com/xml/ns/javaee
       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
    
@@ -16,9 +16,17 @@
   <param-name>facelets.DEVELOPMENT</param-name>
   <param-value>true</param-value>
  </context-param>
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
  <context-param>
   <param-name>javax.faces.CONFIG_FILES</param-name>
   <param-value>/WEB-INF/faces-config.xml</param-value>
+ </context-param>
+ <context-param>
+     <param-name>org.apache.myfaces.EXPRESSION_FACTORY</param-name>
+     <param-value>com.sun.el.ExpressionFactoryImpl</param-value>
  </context-param>
  
  <!-- Activate the JSF 2.0 servlet -->
