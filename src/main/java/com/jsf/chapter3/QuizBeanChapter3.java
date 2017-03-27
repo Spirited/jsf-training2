@@ -54,7 +54,7 @@ public class QuizBeanChapter3 implements Serializable{
             score++;
             nextProblem();
             if ( currentProblem == problems.size() ) return "done";
-            else return "success";
+            else return "success?faces-redirect=true";
         }
         else if ( tries == 1 ) return "again";
         else {
